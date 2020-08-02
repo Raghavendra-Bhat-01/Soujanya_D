@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Magazine/Blog Theme">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/view_style.css">
+    
+
+  <title>The Drawing Artist</title>
+
+  
+</head>
+<body>
+
+  <header>
+      
+    <nav class="navbar navbar-expand-md navbar-light bg-warning absolute-top rounded">
+      <div class="container">
+
+        <button class="navbar-toggler order-2 order-md-1" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-left navbar-right" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="page-Home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posts</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown02">
+                <a class="dropdown-item" href="post-sketches.html">Skteches</a>
+                <a class="dropdown-item" href="post-paintings.html">Paintings</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto order-1 order-md-3" href="index.html"><img src="img/Logo.png"></img></a>
+
+        <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-right">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page-about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline" role="search">
+            <input class="search js-search form-control form-control-rounded mr-sm-2" type="text" title="Enter search query here.." placeholder="Search.." aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <h2 style="text-align:center">Sketches</h2>
+   <center><div class="row">
+    <div class="column">
+      <img src="img/Sample_img (5).jpg" style="width:300px; height:200px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/Sample_img (9).jpg" style="width:300px; height:200px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/Sample_img (18).jpg" style="width:300px; height:200px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/Sample_img (22).jpg" style="width:300px; height:200px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div></center>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/Sample_img (5).jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/Sample_img (9).jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/Sample_img (18).jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/Sample_img (22).jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <div class="row" style="float: left;">
+            <div class="column">
+                <img class="demo cursor" src="img/Sample_img (5).jpg" style="width:300px; height:200px" onclick="currentSlide(1)" alt="Ganapati">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Sample_img (9).jpg" style="width:300px; height:200px" onclick="currentSlide(2)" alt="Bird">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Sample_img (18).jpg" style="width:300px; height:200px" onclick="currentSlide(3)" alt="Inovative">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Sample_img (22).jpg" style="width:300px; height:200px" onclick="currentSlide(4)" alt="Art_Work">
+            </div>
+            </div>
+        </div>
+     </div>
+  
+  <script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+      
+  </body>
+  </html>
+  
